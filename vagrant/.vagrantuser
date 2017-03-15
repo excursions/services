@@ -1,0 +1,12 @@
+pagrant:
+    mem: 2048
+    sync:
+        exclude:
+            - vendor/*
+            - app/logs/*
+            - app/cache/*
+            - app/bootstrap*
+            - web/uploads/*
+            - web/bundles/*
+            - bower_components/
+            - node_modules/*

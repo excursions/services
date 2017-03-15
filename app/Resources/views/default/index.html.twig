@@ -1,0 +1,74 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}
+    {{ parent() }}
+    <title>ORO Applications Support</title>
+{% endblock %}
+
+{% block stylesheets %}
+    {{ parent() }}
+    <link href="{{ asset('css/style.css') }}" rel="stylesheet">
+    <link href="{{ asset('css/bootstrap.min.css') }}" rel="stylesheet">
+    <link href="{{ asset('font-awesome/css/font-awesome.min.css') }}" rel="stylesheet">
+{% endblock %}
+
+{% block body %}
+    <div class="container-fluid content">
+        <nav class="navbar navbar-inverse navbar-fixed-top bottom-bound" role="navigation">
+            <div class="navbar-header home">
+                <a class="navbar-brand" href="{{ path('homepage') }}"><b>OroCRM</b> Support</a>
+            </div>
+        </nav>
+        <div class="row main">
+            <div class="col-md-12">
+                <div class="col-md-2"></div>
+                <div class="col-md-8">
+                    <div class="jumbotron well">
+                        <h2>
+                            <b>OroCRM</b> Support
+                        </h2>
+                        <p>
+                            There are various sales and marketing applications to help you cater to your customers' needs in the best way possible.
+                            If your choice of tools is based on the <b>OroPlatform</b> then our team of experts can help you:
+                        </p>
+                        <div class="sub-content">
+                            <div class="listing">
+                                {% include 'serviceslist.html.twig' %}
+                            </div>
+                            <div class="toggled-content js-temp js-shown">
+                                <p>
+                                    <b>OroCRM</b>'s flexibile architecture allows it to adhere to a wide variety of business needs but there is always room to improve.
+                                    For example, you might want to control which entity records appear in your data grids depending on who is viewing them, and when, and why.
+                                    No problem! We will extend your ACL with a configurable schema of access rules to let you regulate the permissions on a per record/per user basis.
+                                    You decide when to show a record and to whom, and which actions on this record to expose.
+                                    Once you are done you might decide to give some power back to your sales team.
+                                    Fine by us! We will improve their grid filter to use advanced search with suggestions and give them the ability to edit the filtered records in bulk.
+                                    Not satisfied? Sure, they might need a different reporting tool or improved import/export behaviour, or a better integration with MS Outlook, MS Exchange, Mailchimp, Magento, Zendesk and others.
+                                    For this and error fixes, custom patches, tuning, development, scaling and more get in touch with us now and let us in on your needs. We will try to help ASAP.
+                                </p>
+                                <button class="btn navy-bg">Get in touch with us now</button>
+                            </div>
+                            <div class="js-form-container">
+                                {{ render(controller('AppBundle:Default:form')) }}
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-2"></div>
+            </div>
+        </div>
+        <div class="row tint">
+            <div class="container text-center">
+                    <p class="center-block footer-text">
+                        © {{ "now"|date("Y") }} OroCRM Support. All rights reserved.
+                    </p>
+            </div>
+        </div>
+    </div>
+{% endblock %}
+{% block javascripts %}
+    <script crossorigin="anonymous" src="{{ asset('js/jquery-3.1.1.min.js') }}"></script>
+    <script crossorigin="anonymous" src="{{ asset('js/underscore-min.js') }}"></script>
+    <script crossorigin="anonymous" src="{{ asset('js/dynamics.min.js') }}"></script>
+    <script crossorigin="anonymous" src="{{ asset('js/formHandler.js') }}"></script>
+{% endblock %}

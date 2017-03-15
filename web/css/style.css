@@ -1,0 +1,103 @@
+body {
+    font-family: "Open Sans" ,Helvetica,Arial, sans-serif;
+}
+
+.content {
+    word-wrap: break-word;
+}
+
+.main {
+    padding-top:72px;
+    background-color: #202224;
+}
+
+.footer-text {
+    color: #9d9d9d;
+    font-size: medium;
+}
+
+.content h2 {
+    padding-top:20px;
+    padding-bottom:20px;
+}
+
+.sub-content {
+    margin-top: 40px;
+    padding-bottom: 40px;
+}
+
+.tint {
+    background-color: #202224;
+}
+
+.navbar.bottom-bound {
+    border-color: #ffcc00 !important;
+}
+
+.transparent {
+    opacity: 0;
+    -webkit-transform-origin: 50% 10px;
+    -moz-transform-origin: 50% 10px;
+    transform-origin: 50% 10px;
+    -webkit-transform: scale(.1);
+    transform: scale(.1);
+    display: none;
+}
+
+textarea.form-control{
+    min-height: 160px;
+}
+
+.listing {
+    margin-bottom: 38px !important;
+}
+
+.listing tr {
+    cursor: pointer;
+}
+
+td {
+    font-size: 20px;
+}
+
+tr.info-line {
+    background-color: #d9edf7;
+}
+
+form label {
+    font-size: 18px;
+}
+
+form .controls {
+    margin-top: 26px;
+}
+
+form .controls button {
+    font-size: 18px;
+}
+
+form>div>ul>li {
+    font-size: 18px;
+}
+
+.navy {
+    color: #1394ca;
+}
+
+.navy-bg {
+    color: #fff;
+    background-color: #1394ca;
+}
+
+.toggled-content button {
+    margin-top: 20px;
+    font-size: 20px;
+}
+
+.clickable {
+    cursor: pointer;
+}
+
+.borderless>tbody>tr>td {
+    border-width: 0px !important;
+}

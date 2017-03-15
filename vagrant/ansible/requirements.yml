@@ -1,0 +1,6 @@
+- name: dincho.php-fpm
+  version: master
+- src: jdauphant.nginx
+- src: dincho.percona-server
+- src: dincho.elasticsearch
+- src: kosssi.composer
